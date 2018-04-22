@@ -2,13 +2,13 @@
 <html>
     <head>
         <meta charset="UTF-8">
+        <title>首页</title>
         <meta name="keywords" content="">
         <meta name="description" content="">
         <link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="./static/css/main.css">
         <link rel="stylesheet" href="./static/css/index.css">
-        <script src="./static/js/main.js"></script>
-        <title>首页</title>
+        <link rel="stylesheet" href="./static/css/common.css">
     </head>
     <body>
         <div id="main">
@@ -91,25 +91,41 @@
                             <li>
                                 <dl>
                                     <dt></dt>
-                                    <dd class="overflowhidden2">About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.</dd>
+                                    <dd>
+                                        <a href="" class="overflowhidden2">
+                                        About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.
+                                        </a>
+                                    </dd>
                                 </dl>
                             </li>
                             <li>
                                 <dl>
                                     <dt></dt>
-                                    <dd class="overflowhidden2">About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.</dd>
+                                    <dd>
+                                        <a href="" class="overflowhidden2">
+                                        About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.
+                                        </a>
+                                    </dd>
                                 </dl>
                             </li>
                             <li>
                                 <dl>
                                     <dt></dt>
-                                    <dd class="overflowhidden2">About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.</dd>
+                                    <dd>
+                                        <a href="" class="overflowhidden2">
+                                        About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.
+                                        </a>
+                                    </dd>
                                 </dl>
                             </li>
                             <li>
                                 <dl>
                                     <dt></dt>
-                                    <dd class="overflowhidden2">About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.</dd>
+                                    <dd>
+                                        <a href="" class="overflowhidden2">
+                                        About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.About us.
+                                        </a>
+                                    </dd>
                                 </dl>
                             </li>
                         </ul>
@@ -155,31 +171,65 @@
                         <li>
                             <dl>
                                 <dt></dt>
-                                <dd>Thank you for brokering my Copart auto purchase.You made it possible and your service and help were excellent.Thank you for brokering my Copart auto purchase.You made it possible</dd>
+                                <dd class="overflowhidden2">Thank you for brokering my Copart auto purchase.You made it possible and your service and help were excellent.Thank you for brokering my Copart auto purchase.You made it possible</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt></dt>
+                                <dd class="overflowhidden2">Thank you for brokering my Copart auto purchase.You made it possible and your service and help were excellent.Thank you for brokering my Copart auto purchase.You made it possible</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt></dt>
+                                <dd class="overflowhidden2">Thank you for brokering my Copart auto purchase.You made it possible and your service and help were excellent.Thank you for brokering my Copart auto purchase.You made it possible</dd>
+                            </dl>
+                        </li>
+                        <li>
+                            <dl>
+                                <dt></dt>
+                                <dd class="overflowhidden2">Thank you for brokering my Copart auto purchase.You made it possible and your service and help were excellent.Thank you for brokering my Copart auto purchase.You made it possible</dd>
                             </dl>
                         </li>
                     </ul>
                 </div>
             </div>
+            <!--twosigin-->
+            <div class="joinus">
+                <div class="joinuscon">
+                    <p class="title">Register today and get Free Membership!</p>
+                    <p class="title">It's fast and easy.</p>
+                    <div class="joinusbtn">REGISTER NOW</div>
+                </div>
+            </div>
+            <!--footer-->
+            <div id="footer"></div>
+            <div id="links"></div>
+            <div id="bottomfooter"></div>
         </div>
+        <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+            $("#footer").load("./views/commons.html .footer",function(){});
+            $("#links").load("./views/commons.html .frinendlinks",function(){});
+            $("#bottomfooter").load("./views/commons.html .bottomfooter",function(){});
+            function _$(dom){
+                return document.querySelector(dom)
+            };
+            _$('.styleimgs').onmouseover = function(event){
+                var evt = event||window.event
+                if(evt.target.tagName=='SPAN'){
+                    //console.log(evt.target.getAttribute('data-overtype'))
+                    evt.target.innerHTML = evt.target.getAttribute('data-overtype')
+                }
+            }
+            _$('.styleimgs').onmouseout = function(event){
+                var evt = event||window.event
+                if(evt.target.tagName=='SPAN'){
+                    //console.log(evt.target.getAttribute('data-overtype'))
+                    evt.target.innerHTML = evt.target.getAttribute('data-outtype')
+                }
+            }
+        </script>
     </body>
-    <script>
-        function $(dom){
-            return document.querySelector(dom)
-        };
-        $('.styleimgs').onmouseover = function(event){
-            var evt = event||window.event
-            if(evt.target.tagName=='SPAN'){
-                //console.log(evt.target.getAttribute('data-overtype'))
-                evt.target.innerHTML = evt.target.getAttribute('data-overtype')
-            }
-        }
-        $('.styleimgs').onmouseout = function(event){
-            var evt = event||window.event
-            if(evt.target.tagName=='SPAN'){
-                //console.log(evt.target.getAttribute('data-overtype'))
-                evt.target.innerHTML = evt.target.getAttribute('data-outtype')
-            }
-        }
-    </script>
 </html>

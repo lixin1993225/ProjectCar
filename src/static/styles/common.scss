@@ -1,0 +1,134 @@
+.footer{
+	width:100%;
+	padding:102px 0 125px 0;
+	.companycon{
+		width:1200px;
+		height:auto;
+		margin:0 auto;
+		padding:0 15px;
+		.titlelist{
+			li{
+				float:left;
+				&:nth-child(1){
+					width:538px;
+					height:auto;
+					margin-right:138px;
+					dt{
+						margin-bottom:70px;
+						font-size:14px;
+						color:#656565;
+					}
+					.listcon{
+						li{
+							width:102px;
+							margin-right:115px;
+							margin-bottom:22px;
+							line-height: 14px;
+							a{
+								width:102px;
+								color:#656565;
+								font-size:14px;
+								line-height: 14px;
+							}
+							&:nth-child(3n){
+								margin-right:0;
+							};
+						}
+					}
+				};
+				&:nth-child(2){
+					width:140px;
+					height:auto;
+					margin-right:140px;
+					dt{
+						margin-bottom:70px;
+						font-size:14px;
+						color:#656565;
+					}
+					.auctionlist{
+						li{
+							width:140px;
+							margin-right:115px;
+							margin-bottom:22px;
+							line-height: 14px;
+							a{
+								width:102px;
+								color:#656565;
+								font-size:14px;
+								line-height: 14px;
+							}
+						}
+					}
+				};
+				&:nth-child(3){
+					width:212px;
+					height:auto;
+					dt{
+						margin-bottom:70px;
+						font-size:14px;
+						color:#656565;
+					}
+					.company{
+						li{
+							width:212px;
+							margin-right:0;
+							margin-bottom:22px;
+							line-height: 14px;
+							a{
+								width:102px;
+								color:#656565;
+								font-size:14px;
+								line-height: 14px;
+							}
+						}
+					}
+				};
+			}
+		}
+	}
+}
+.frinendlinks{
+	width:100%;
+	height:auto;
+	background:#efefef;
+	padding:100px 0 30px;
+	.frinendlinkscon{
+		width:1200px;
+		padding:0 15px;
+		margin:0 auto;
+		.links{
+			li{
+				float:left;
+				width:330px;
+				height:40px;
+				margin-right:90px;
+				margin-bottom: 70px;
+				background:#ccc;
+				background-size:cover;					
+				a{
+					display: inline-block;
+					width:100%;
+					height:100%;
+				};
+				&:nth-child(3n){
+					margin-right:0;
+				};
+			}
+		}
+	}
+}
+.bottomfooter{
+	width:100%;
+	height:168px;
+	background:#efefef;
+	.linksp{
+		width:560px;
+		height:auto;
+		padding-top:57px;
+		text-align: center;
+		line-height:30px;
+		color:#767676;
+		font-size:16px;
+		margin:0 auto;
+	}
+}
