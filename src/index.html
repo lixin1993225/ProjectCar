@@ -12,21 +12,11 @@
     </head>
     <body>
         <div id="main">
-            <!--头部-->
             <div class="bannertop">
                 <div class="home_top">
                     <div class="contents">
-                        <ul class="topsearch clearfloat">
-                            <li class="leftitem">MySoEasy</li>
-                            <li class="centeritem">
-                                <input type="text" class="searchinp" placeholder="Serach for Any Vehicle">
-                                <img src="static/images/search.png" class="searchimg" alt="">
-                            </li>
-                            <li class="timeitem">
-                                <span class="times">08:00 PM CST</span>
-                            </li>
-                            <li class="sigin">REGISTER NOW</li>
-                        </ul>
+                        <!--头部引入-->
+                        <div id="headersearch"></div>
                         <div class="textcon">
                             <p class="toptext">We have over 162,100 vehicles at auction.</p>
                             <p class="bottomtext">Save thousands on your next vehicle purchase!</p>
@@ -196,13 +186,7 @@
                 </div>
             </div>
             <!--twosigin-->
-            <div class="joinus">
-                <div class="joinuscon">
-                    <p class="title">Register today and get Free Membership!</p>
-                    <p class="title">It's fast and easy.</p>
-                    <div class="joinusbtn">REGISTER NOW</div>
-                </div>
-            </div>
+            <div id="joins"></div>
             <!--footer-->
             <div id="footer"></div>
             <div id="links"></div>
@@ -210,10 +194,12 @@
         </div>
         <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
         <script>
-            $("#footer").load("./views/commons.html .footer",function(){});
-            $("#links").load("./views/commons.html .frinendlinks",function(){});
-            $("#bottomfooter").load("./views/commons.html .bottomfooter",function(){});
-            function _$(dom){
+            $("#headersearch").load("./views/commons.html .header",function(){});//加载头部搜索栏
+            $("#joins").load("../views/commons.html .joinus",function(){});//各个页面的注册
+            $("#footer").load("./views/commons.html .footer",function(){});//底部懒
+            $("#links").load("./views/commons.html .frinendlinks",function(){});//底部懒
+            $("#bottomfooter").load("./views/commons.html .bottomfooter",function(){});//底部懒
+            function _$(dom){//dom选择
                 return document.querySelector(dom)
             };
             _$('.styleimgs').onmouseover = function(event){
@@ -231,5 +217,7 @@
                 }
             }
         </script>
+        <!--最后加入,公共模块的js引入-->
+        <script src="./static/js/commons.js"></script>
     </body>
 </html>

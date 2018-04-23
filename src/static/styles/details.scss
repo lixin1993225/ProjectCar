@@ -1,0 +1,140 @@
+#details{
+	.detailcon{
+		max-width:1920px;
+		height:auto;
+		.detailconwrap{
+			width:1200px;
+			height:auto;
+			margin:0 auto;
+			padding:0 15px;
+			.listtitle{
+				padding:32px 0;
+				margin-bottom:24px;
+				padding-left: 20px;
+				font-size:20px;
+				font-weight:bold;
+			}
+			.imgswrap{
+				width:100%;
+				height:520px;
+				margin-top:-6px;
+				margin-bottom:48px;
+				img{
+					width:100%;
+					height:100%;
+					border:none;
+				}
+			}
+			.detailstips{
+				width:100%;
+				height:auto;
+				padding:0 24px; 
+				.detailstipstitle{
+					padding:34px 0;
+					margin:0 0 39px;
+					font-size:20px;
+					line-height: 20px;
+					font-weight:bold;
+					color:#00397a;
+					border-bottom:2px solid #f0f0f0;
+				}
+				.tipslist{
+					padding:0 35px;
+					li{
+						height:50px;
+						line-height: 50px;
+						span{
+							display:inline-block;
+							font-size:16px;
+							color:#767676;
+						}
+						.tipslistname{
+							width:178px;
+						}
+						.tipslistintr{
+							padding-left:112px;
+							font-weight:bold;
+						}
+					}
+				}
+				.btns{
+					padding:24px 0 35px;
+					div{
+						float:right;
+						width:245px;
+						height:59px;
+						border-radius: 4px;
+						border:1px solid #f3a032;
+						text-align: center;
+						line-height: 59px;
+						color:#f3a032;
+						font-size: 20px;
+						font-weight:bold;
+						cursor: pointer;
+					}
+					.rightbtn{
+						margin-left:30px;
+						background: #f3a032;
+						color:#fff;
+					}
+				}
+			}
+		}
+	}
+	.cardisplay{
+		max-width:1920px;
+		height:auto;
+		margin-top:121px;
+		margin-bottom: 142px;
+		.cardisplaywrap{
+			width:1200px;
+			height:auto;
+			padding:0 15px;
+			margin:0 auto;
+			.cardisplaytit{
+				height:66px;
+				width:100%;
+				background:#f0f0f0;
+				text-align: center;
+				line-height: 66px;
+				color:#00397a;
+				font-size:20px;
+				font-weight:bold;
+			}
+			.cardisplaylistwrap{
+				width:100%;
+				padding:58px 58px 0;
+				background:#fcfcfc;
+				.cardisplaylist{
+					li{
+						float:left;
+						width:189px;
+						height:auto;
+						margin-right:27px;
+						padding-bottom: 79px;
+						dl{
+							dt{
+								width:189px;
+								height:147px;
+								margin-bottom: 30px;
+								background:url(../images/cars.png) no-repeat center;
+								background-size:cover;
+							}
+							dd{
+								width:189px;
+								height:15px;
+								color:#000;
+								line-height: 15px;
+								font-size:15px;
+								font-weight:bold;
+							}
+						}
+						&:nth-child(5n){
+							margin-right:0;
+						};
+					}
+				}
+			}
+		}
+	}
+}

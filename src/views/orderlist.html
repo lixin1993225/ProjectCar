@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Order</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../static/css/main.css">
+    <link rel="stylesheet" href="../static/css/orderlist.css">
+    <link rel="stylesheet" href="../static/css/common.css">
+</head>
+<body>
+	<div id="orderlist">
+		<!--导航-->
+		<div id="headersearch"></div>
+		<!--面包屑导航-->
+		<div class="navigation">
+			<div class="navcon clearfloat">
+				<a href="" class="returnlink">Home</a>
+				<span class="presentlink">></span>
+				<a href="javascript:void(0)" class="presentlink">Myorder</a>
+			</div>
+		</div>
+		<!--orderlist-->
+		<div class="orderlists">
+			<div class="orderlistwrap">
+				<p class="listtitle">My Order List</p>
+				<div class="listcontent">
+					<ul class="listcontop listcon_style clearfloat">
+						<li class="listcontop_first">Product</li>
+						<li class="listcontop_first_one"></li>
+						<li class="listcontop_second">Time</li>
+						<li class="listcontop_third">Total</li>
+						<li class="listcontop_fourth">Remove</li>
+					</ul>
+					<div class="orderlistrender">
+						<!--渲染节点-->
+						<ul class="listconcon listcon_style clearfloat">
+							<li class="listcontop_first">
+								<img src="../static/images/cars.png" alt="car">
+							</li>
+							<li class="listcontop_first_one">SeDan</li>
+							<li class="listcontop_second">2018-03-12</li>
+							<li class="listcontop_third">$600.00USD</li>
+							<li class="listcontop_fourth">&times;</li>
+						</ul>
+						<!--渲染节点-->
+						<ul class="listconcon listcon_style clearfloat">
+							<li class="listcontop_first">
+								<img src="../static/images/cars.png" alt="car">
+							</li>
+							<li class="listcontop_first_one">SeDan</li>
+							<li class="listcontop_second">2018-03-12</li>
+							<li class="listcontop_third">$600.00USD</li>
+							<li class="listcontop_fourth">&times;</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--display-->
+		<div class="cardisplay">
+			<div class="cardisplaywrap">
+				<p class="cardisplaytit">SIMILAR VEHICLES</p>
+				<div class="cardisplaylistwrap">
+					<ul class="cardisplaylist clearfloat">
+						<!--循环节点-->
+						<li>
+							<a href="">
+								<dl>
+									<dt></dt>
+									<dd class="overflowhidden">SUV SUV SUV SUV SUV SUV SUV </dd>
+								</dl>								
+							</a>
+						</li>
+						<!--循环节点-->
+						<li>
+							<a href="">
+								<dl>
+									<dt></dt>
+									<dd class="overflowhidden">SUV SUV SUV SUV SUV SUV SUV </dd>
+								</dl>								
+							</a>
+						</li>
+						<!--循环节点-->
+						<li>
+							<a href="">
+								<dl>
+									<dt></dt>
+									<dd class="overflowhidden">SUV SUV SUV SUV SUV SUV SUV </dd>
+								</dl>								
+							</a>
+						</li>
+						<!--循环节点-->
+						<li>
+							<a href="">
+								<dl>
+									<dt></dt>
+									<dd class="overflowhidden">SUV SUV SUV SUV SUV SUV SUV </dd>
+								</dl>								
+							</a>
+						</li>
+						<!--循环节点-->
+						<li>
+							<a href="">
+								<dl>
+									<dt></dt>
+									<dd class="overflowhidden">SUV SUV SUV SUV SUV SUV SUV </dd>
+								</dl>								
+							</a>
+						</li>
+						<!--循环节点-->
+						<li>
+							<a href="">
+								<dl>
+									<dt></dt>
+									<dd class="overflowhidden">SUV SUV SUV SUV SUV SUV SUV </dd>
+								</dl>								
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+        <!--twosigin-->
+        <div id="joins"></div>
+        <!--footer-->
+        <div id="footer"></div>
+        <div id="bottomfooter"></div>
+	</div>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script>
+        $("#headersearch").load("../views/commons.html .header",function(){});//加载头部搜索栏
+        $("#joins").load("../views/commons.html .joinus",function(){});//各个页面的注册
+        $("#footer").load("../views/commons.html .footer",function(){});//底部懒
+        $("#bottomfooter").load("../views/commons.html .bottomfooter",function(){});//底部懒
+	</script>
+</body>
+</html>

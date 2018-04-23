@@ -28,68 +28,15 @@ $titleFontsize:46px;
 			.contents{
 				width:1200px;
 				height:auto;
-				padding:50px 15px 0;
+				padding:20px 0px 0;
 				margin:0 auto;
 				font-size:26px;
 				font-weight:bold;
-				ul{
-					li{
-						float:left;
-					}
-					.leftitem{
-						color:#fff;
-						margin-right:80px;
-					}
-					.centeritem{
-						position:relative;
-						width:550px;
-						height:50px;
-						border-radius:25px;
-						background:rgba(225,225,225,.2);
-						.searchinp{
-							position: absolute;
-							top:0;
-							left:30px;
-							width:440px;
-							height:50px;
-							background:none;
-							border:none;
-							caret-color:#ccc;
-							color:rgb(117,117,117);
-						}
-						.searchimg{
-							position: absolute;
-							right:30px;
-							top:16px;
-							width:21px;
-							height:21px;
-							cursor:pointer;
-						}
-					}
+				.topsearchwrap{
+					background: rgba(0,0,0,0);
 					.timeitem{
-						min-width:110px;
-						margin-left:80px;
-						.times{
-							padding-left:20px;
-							background:url(../images/time.png) no-repeat left;
-							background-size:14px;
-							font-size:14px;
-							color:#fff;
-						}
+						
 					}
-					.sigin{
-						width:160px;
-						height:50px;
-						text-align: center;
-						line-height:50px;
-						color:#000;
-						font-size:14px;
-						border-radius:25px;
-						background:#fff;
-						margin-left:50px;
-						cursor:pointer;
-						user-select: none
-					}					
 				}
 				.textcon{
 					margin-top:170px;
@@ -187,6 +134,7 @@ $titleFontsize:46px;
 			border-radius:27.5px;
 			background:#f3a032;
 			color:#3f3f3f;
+			font-weight:bold;
 			margin:0 auto;
 			text-align: center;
 			margin-top:32px;
@@ -369,6 +317,7 @@ $titleFontsize:46px;
 				text-align: center;
 				line-height: 50px;
 				color:#000;
+				font-weight:bold;
 				background:#f3a032;
 				margin: 0 auto;
 				margin-top:88px;
