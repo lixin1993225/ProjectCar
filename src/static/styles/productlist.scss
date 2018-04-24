@@ -1,0 +1,295 @@
+#productlist{
+	.productcon{
+		max-width:1920px;
+		height:auto;
+		margin:0 auto;
+		margin-bottom:132px;
+		.productconwrap{
+			width:1200px;
+			height:auto;
+			padding:0px 15px;
+			margin:0 auto;
+			.productcontit{
+				padding:32px 0;
+				padding-left: 20px;
+				font-size:20px;
+				font-weight:bold;
+			}
+			.productlists{
+				.productlistsleft{
+					float:left;
+					width:260px;
+					height:auto;
+					margin-right:40px;
+					border:1px solid #f0f0f0;
+					border-bottom:none;
+					.leftsearch{
+						width:100%;
+						height:auto;
+						.leftsearchtit{
+							width:100%;
+							height:60px;
+							padding-left:20px;
+							line-height: 60px;
+							color:#00397a;
+							font-size:16px;
+							font-weight: bold;
+							background:#f0f0f0;
+						}
+						.searchlist{
+							padding-left: 20px;
+							li{
+								display: flex;
+    							align-items: center;
+								height:60px;
+								width:240px;
+								border-bottom: 1px solid #f0f0f0;
+								line-height:60px;
+								.toggle{
+							        text-align: center;
+							        border: none;
+							        appearance: none;
+							        outline: none;
+							        cursor :pointer;
+							        width:18px;
+							        height:18px;
+							        &:after{
+							        	box-sizing: border-box;
+							        	display:inline-block;
+							            content: '';
+							            width:18px;
+							            height:18px;
+							            line-height: 18px;
+							            border:1px solid #1dc282;
+							            border-radius:2px;
+							        }
+							        &:checked:after{
+							        	display:inline-block;
+							            content: '✔';
+							            color:#1dc282;
+							            width:18px;
+							            height:18px;
+							            line-height: 18px;
+							            text-align: center;
+							            border-radius:2px;
+							            border:1px solid #1dc282;
+							        }
+								}
+								.lebelchek{
+									cursor:pointer;
+									color:#1dc282;
+									margin-bottom: 0;
+								}
+								.searchtit{
+									padding-left:18px;
+									color:#1dc282;
+								}
+							}
+						}
+					}
+				}
+				.productlistsright{
+					float:left;
+					width:870px;
+					height:auto;
+					.righttopstyle{
+						width:100%;
+						height:auto;
+						li{
+							height:60px;
+						}
+						.firstli{
+							width:296px;
+							padding:0 20px;
+							float:left;
+							display:flex;
+							align-items: center;
+							span{
+								display:flex;
+								flex:1;
+								color:#00397a;
+								font-size:16px;
+								font-weight:bold;
+							}
+							img{
+								width:256px;
+								height:200px;
+							}
+							.righttext{
+								color:#767676;
+								justify-content:flex-end;
+							}
+						}
+						.secondli{
+							width:343px;
+							height:60px;
+							float:left;
+							padding:0 16px;
+						}
+						.thirdli{
+							width:230px;
+							float:left;
+							display:flex;
+							align-items: center;
+							padding:0 31px 0 39px;
+							span{
+								display:inline-block;
+								width:100%;
+								text-align: right;
+								color:#767676;
+								font-size:16px;
+								&:before{
+									display:inline-block;
+									padding-right:7px;
+									color:767676;
+									font-size:16px;
+									content:"Total:";
+								};
+							}
+						}
+					}
+					.righttoptit{
+						background:#f0f0f0;
+					}
+					.righttopcon{
+						height:274px;
+						li{
+							height:274px;
+						}
+						.secondli{
+							height:274px;
+							padding:31px 18px;
+							.secondlitit{
+								line-height:40px;
+								padding-bottom: 6px;
+								color:#00397a;
+								font-size:18px;
+								font-weight:bold;
+							}
+							.cartips{
+								li{
+									float:left;
+									width:50%;
+									height:30px;
+									line-height: 30px;
+									color:#767676;
+									font-size:12px;
+								}
+								.mileage{
+									&:before{
+										display:inline-block;
+										content:'Mileage:';
+										padding-right:3px;
+									};
+								}
+								.saledate{
+									&:before{
+										display:inline-block;
+										content:'Sale Date:';
+										padding-right:3px;
+									};
+								}
+								.damage{
+									&:before{
+										display:inline-block;
+										content:'Damage:';
+										padding-right:3px;
+									};
+								}
+								.location{
+									&:before{
+										display:inline-block;
+										content:'Location:';
+										padding-right:3px;
+									};
+								}
+								.vin{
+									&:before{
+										display:inline-block;
+										content:'VIN:';
+										padding-right:3px;
+									};
+								}
+							}
+							.price{
+								display:flex;
+								align-items: center;
+								margin-top:30px;
+								height:24px;
+								line-height: 24px;
+								.meiprice{
+									color:#f3a032;
+									font-size:20px;
+									font-weight: bold;
+									padding-right:20px;
+								}
+								.aishsa{
+									color:#767676;
+									font-size:14px;
+
+								}
+							}
+						}
+						.thirdli{
+							display: initial;
+							padding:31px 31px 31px 38px;
+							.thirdlilitit{
+								text-align: right;
+								line-height:40px;
+								padding-bottom: 6px;
+								color:#000;
+								font-size:18px;
+								font-weight:bold;
+							}
+							.thirdbtn{
+								width:160px;
+								height:47px;
+								background:#f3a032;
+								text-align: center;
+								line-height: 47px;
+								color:#fff;
+								font-size:16px;
+								border-radius: 2px;
+								margin-top:110px;
+								cursor:pointer;
+								user-select:none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.fenye{
+	.fenyetips{
+		font-size:16px;
+		color:#767676;
+	}
+	#pages{
+		.first,.prev,.next,.last{
+			display:none;
+		}
+		.page-item a{
+			margin-right:20px;
+		}
+		.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+		    z-index: 3;
+		    color: #00397a;
+		    cursor: default;
+		    background-color: #fbfbfb;
+		    border-color: #00397a!important;
+		}
+		.pagination>li>a, .pagination>li>span {
+		    position: relative;
+		    float: left;
+		    padding: 6px 12px;
+		    margin-left: -1px;
+		    line-height: 1.42857143;
+		    color: #767676;
+		    text-decoration: none;
+		    background-color: #fbfbfb;
+		    border: 1px solid #fbfbfb;
+		}
+	}	
+}

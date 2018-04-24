@@ -6,6 +6,7 @@
     <meta name="keywords" content="">
     <meta name="description" content="">
     <link rel="shortcut icon" href="./static/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
     <link rel="stylesheet" href="../static/css/main.css">
     <link rel="stylesheet" href="../static/css/news.css">
     <link rel="stylesheet" href="../static/css/common.css">
@@ -18,13 +19,21 @@
 		<div class="navigation">
 			<div class="navcon clearfloat">
 				<a href="" class="returnlink">Home</a>
-				<a href="javascript:void(0)" class="presentlink">NEWS</a>
+				<a href="javascript:void(0)" class="presentlink">News</a>
 			</div>
 		</div>
 		<!--Shuffling figure-->
 		<div class="Shuffling">
 			<div class="Shufflingimgs">
-				
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide" style="background:url(../static/images/ISP_00017.jpg) no-repeat center;background-size: 100%"></div>
+				        <div class="swiper-slide" style="background:url(../static/images/ISP_00014.jpg) no-repeat center;background-size:  100%"></div>
+				        <div class="swiper-slide" style="background:url(../static/images/ISP_00018.jpg) no-repeat center;background-size:  100%"></div>
+				    </div>
+				    <div class="swiper-button-prev"></div>
+				    <div class="swiper-button-next"></div>
+				</div>
 			</div>
 		</div>
 		<!--news and share-->
@@ -111,7 +120,7 @@
 				<div class="rightshare">
 					<!--topshare-->
 					<div class="shares">
-						<p class="sharestit">Follow US</p>
+						<p class="sharestit">Follow Us</p>
 						<ul class="linksurl">
 							<!--facebook-->
 							<li>
@@ -183,11 +192,16 @@
         <div id="bottomfooter"></div>
 	</div>
 	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
 	<script>
         $("#headersearch").load("../views/commons.html .header",function(){});//加载头部搜索栏
         $("#joins").load("../views/commons.html .joinus",function(){});//各个页面的注册
         $("#footer").load("../views/commons.html .footer",function(){});//底部懒
         $("#bottomfooter").load("../views/commons.html .bottomfooter",function(){});//底部懒
+		var mySwiper = new Swiper('.swiper-container',{
+			prevButton:'.swiper-button-prev',
+			nextButton:'.swiper-button-next',
+		})
 	</script>
 </body>
 </html>
