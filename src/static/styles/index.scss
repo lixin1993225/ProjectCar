@@ -1,5 +1,6 @@
 $titleFontsize:46px;
 #main{
+	position:relative;
 	max-width:1920px;
 	height:100%;
 	margin:0 auto;
@@ -15,17 +16,16 @@ $titleFontsize:46px;
 			text-align:center;
 			line-height:50px;
 			&:after {
-				width: 165%;
+				width: 1920px;
 				height: 810px;
 				position: absolute;
-				left: -33%;
+				left: 0;
 				top:0;
 				z-index: -1;
 				content: '';
-				border-radius: 0 0 42% 42%;
 				background:linear-gradient(#2CBAF9,#04A9F4);
-				background:url(../images/ISP_00012.jpg) no-repeat center;
-				backrground:100%
+				background:url(../images/indexbanner.jpg) no-repeat top center;
+				background-size:cover
 			}
 			.contents{
 				width:1200px;
@@ -63,11 +63,30 @@ $titleFontsize:46px;
 					text-align: center;
 					line-height: 50px;
 					background:linear-gradient(to right,#ff5e2c,#f3a032);
-					cursor: pointer
+					cursor: pointer;
+					user-select:none
 				}
 			}
 		}	
 	}	
+	.leftsanj{
+		position:absolute;
+		left:0;
+		top:790px;
+	    width: 0;
+	    height: 0;
+	    border-bottom: 20px solid white;
+	    border-right: 375px solid transparent;
+	}
+	.rightsanj{
+		position:absolute;
+		right:0;
+		top:790px;
+	    width: 0;
+	    height: 0;
+	    border-bottom: 20px solid white;
+	    border-left: 375px solid transparent;
+	}
 	.centerserach{
 		position:absolute;
 		z-index:10;
@@ -99,6 +118,7 @@ $titleFontsize:46px;
 						background:#e5e5e5;
 						select{
 							box-sizing: border-box;
+							appearance:none;
 							width:100%;
 							height:100%;
 							color:#7d7d7d;
@@ -106,11 +126,12 @@ $titleFontsize:46px;
 							background:#e5e5e5;
 						  	-webkit-appearance: none;  
 						  	-webkit-tap-highlight-color: #fff;  
-						  	outline: 0; 
+						  	outline: none; 
 						  	border:none;
 						  	option{
 						  		border:none;
-						  	}
+						  	};
+						  	&::-ms-expand { display: none; } 
 						}
 					}
 				}
@@ -163,6 +184,7 @@ $titleFontsize:46px;
 				font-size:17px;
 				line-height:24px;
 				margin-top:16px;
+				color:#767676
 			}
 			.aboutcontent{
 				margin-top:78px;
@@ -188,7 +210,7 @@ $titleFontsize:46px;
 								a{
 									word-break: break-all;
 									line-height:36px;
-									font-size:14px;
+									font-size:19px;
 									color:#767676;
 									-webkit-line-clamp:6;
 								}
@@ -238,7 +260,7 @@ $titleFontsize:46px;
 						background:rgba(0,0,0,0);
 						transition: background 0.6s;
 						&:hover{
-							background:rgba(243,160,50,0.5);
+							background:rgba(243,160,50,0.7);
 						};
 					}
 					&:nth-child(4n){
@@ -259,6 +281,7 @@ $titleFontsize:46px;
 				font-size:$titleFontsize;
 				line-height:$titleFontsize;
 				margin-bottom:150px;
+				font-weight:bold;
 			}
 			.choicecon{
 				li{
@@ -286,7 +309,7 @@ $titleFontsize:46px;
 							margin-left:20px;
 							text-align: left;
 							color:#686868;
-							font-size:16px;
+							font-size:18px;
 						}
 					}	
 					&:nth-child(2n){
@@ -300,7 +323,8 @@ $titleFontsize:46px;
 	.joinus{
 		width:100%;
 		height:460px;
-		background:#ccc;
+		background:url(../images/joinus1.jpg) no-repeat center;
+		background-size:cover;
 		padding-top:100px;
 		.joinuscon{
 			width:1200px;

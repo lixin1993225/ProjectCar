@@ -79,6 +79,7 @@ $titleFontsize:46px;
 .footer{
 	width:100%;
 	padding:102px 0 125px 0;
+	background:#f6f6f6;
 	.companycon{
 		width:1200px;
 		height:auto;
@@ -105,8 +106,8 @@ $titleFontsize:46px;
 							a{
 								width:102px;
 								color:#656565;
-								font-size:14px;
-								line-height: 14px;
+								font-size:16px;
+								line-height: 16px;
 							}
 							&:nth-child(3n){
 								margin-right:0;
@@ -222,6 +223,7 @@ $titleFontsize:46px;
 		float:left;
 		color:#00397a!important;
 		padding-right:10px;
+		font-size:18px;
 		&:after{
 			content:'>';
 			padding-left:10px;
@@ -232,13 +234,15 @@ $titleFontsize:46px;
 		float:left;
 		color:#767676!important;
 		padding-right:10px;
+		font-size:18px;
 	}
 }
 .joinus{
 	max-width:1920px;
 	height:460px;
 	margin:0 auto;
-	background:#ccc;
+	background:url(../images/joinus2.jpg) no-repeat center;
+	background-size:cover;
 	padding-top:100px;
 	.joinuscon{
 		width:1200px;
@@ -262,7 +266,8 @@ $titleFontsize:46px;
 			margin: 0 auto;
 			margin-top:88px;
 			border-radius: 25px;
-			cursor: pointer
+			cursor: pointer;
+			user-select:none;
 		}
 	}
 }

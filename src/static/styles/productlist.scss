@@ -37,14 +37,17 @@
 							background:#f0f0f0;
 						}
 						.searchlist{
-							padding-left: 20px;
 							li{
 								display: flex;
     							align-items: center;
 								height:60px;
-								width:240px;
+								padding-left: 20px;
 								border-bottom: 1px solid #f0f0f0;
 								line-height:60px;
+						        &:last-child{
+						        	border:none
+						        }
+						        user-select:none;
 								.toggle{
 							        text-align: center;
 							        border: none;
@@ -220,7 +223,7 @@
 								line-height: 24px;
 								.meiprice{
 									color:#f3a032;
-									font-size:20px;
+									font-size:28px;
 									font-weight: bold;
 									padding-right:20px;
 								}
@@ -280,6 +283,7 @@
 		    cursor: default;
 		    background-color: #fbfbfb;
 		    border-color: #00397a!important;
+		    border-radius:2px;
 		}
 		.pagination>li>a, .pagination>li>span {
 		    position: relative;
