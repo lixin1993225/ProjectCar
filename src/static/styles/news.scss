@@ -10,11 +10,40 @@
 			padding:0 15px;
 			margin:0 auto;
 			.swiper-container{
+				position:relative;
 				width:100%;
 				height:100%;
 				.swiper-wrapper{
 					width:100%;
 					height:100%;
+					.swiper-slide{
+						.shadowbox{
+							position:absolute;
+							width:100%;
+							height:100%;
+							background:rgba(0,0,0,0.1);
+						}
+						.imgtips{
+							position:absolute;
+							top:312px;
+							left:28px;
+							.imgdesc{
+								width:600px;
+								line-height: 20px;
+								padding-bottom:22px;
+								font-size:20px;
+								color:#fff;
+								-webkit-line-clamp: 2;
+							}
+							.photosource{
+								span{
+									line-height: 14px;
+									font-size:14px;
+									color:#fff;
+								}
+							}
+						}
+					}
 				}
 			}
 		}
